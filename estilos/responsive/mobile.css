@@ -5,12 +5,13 @@
 }
 html{
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Yusei Magic', sans-serif;
 }
 #background{
     background-image: url(../imagenes/background-img.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    background-color: gray;
     width: 100%;
     height: auto;
 }
@@ -22,39 +23,44 @@ body{
 }
 header{
     width: 100vw;
-    height: 8rem;
+    height: 7.5rem;
     padding: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(65, 92, 158, 0.7);
     color: white;
 
 }
 #header-image{
-    width: 4.5rem;
+    width: 6.5rem;
 }
 #cont-header{
-    margin-left: 2.5rem;
-    display: inline;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #cont-header h1{
     font-size: 3rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 0.2rem;
 }
 #cont-header ul{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     list-style: none;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
+    font-size: 1rem;
 }
 #cont-header li{
-    margin: 0.3rem 0.5rem;
+    margin: 0rem 1.3rem;
 }
 #serie-nav{
     width: 100%;
-    height: 10rem;
+    height: auto;
     background-color:  rgba(65, 92, 158, 0.7);
 }
 #serie-nav ul{
@@ -86,19 +92,21 @@ header{
     text-align: right;
     padding: 1rem;
     font-size: 2.33rem;
-    background-color: transparent;
+    background-color: rgb(175, 181, 194, 0.7);
     color: white;
     border: none;
     display: flex;
     align-items: center;
+    outline: none;
+}
+#trailer button:active{
+    background-color: rgba(115, 117, 122, 0.7);
 }
 #trailer button img{
     width: 6rem; 
     margin-right: 2rem;   
 }
-#trailer button{
-    background-color: rgb(175, 181, 194, 0.7);
-}
+
 #serie-adds{
     width: 100%;
     height: auto;   
@@ -109,6 +117,8 @@ header{
     height: 100%;
     width: auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 #puntuacion-estrellas{
     color: white;
@@ -124,5 +134,44 @@ header{
     font-size: 3rem;
 }
 #episodios{
-    margin-left: 6rem;
+    font-size: 2rem;    
+}
+#episodios ul{
+    display: none;
+}
+#guide{
+    width: 15rem;
+    height: 4rem;
+    padding-left: 2rem;
+    border-radius: 20px;
+    background-color: rgba(102, 105, 110, 0.7);
+    color: white;
+    font-size: 2rem;
+    outline: none;
+}
+#guide option{
+    font-size: 1.5rem;
+    padding: 0;
+}
+#descripcion-parrafo{
+    text-align: justify;
+    color: white;
+    margin: 1.5rem 0;
+}
+#watch-later{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#watch-later button{
+    width: 30rem;
+    height: 4rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+    background-color: rgba(102, 105, 110, 0.7);
+    color: white;
+    font-size: 2rem;
+    outline: none;
 }
